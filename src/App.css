@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+
+nav, nav .nav-wrapper, .navbar-fixed, i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  height: 50px;
+  line-height: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+@media screen and (min-width: 1024px){
+  .side-nav.fixed{
+    transform: translateX(0px);
+  }
+  
+  header, main, footer, div .content-main{
+    padding: 10px;
+    margin-left: 280px;
+  }
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header, main, footer, div .content-main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  div .sidenav {
+    top: -15px;
+    width: 270px;
+    
   }
-  to {
-    transform: rotate(360deg);
+
+
+  
+  nav, .login {
+    background-color: #2e4c39;
   }
-}
+
+  .sidenav::-webkit-scrollbar {
+    width: 10px;
+    }
+    .sidenav::-webkit-scrollbar-track { 
+    background : #1b5e20;
+    border-radius: 10px;
+    }
+    .sidenav::-webkit-scrollbar-thumb { 
+    background : rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+    i.icon-red {
+      color: red;
+  }
+
+
+  div .botaoLogin {
+    width: 100%;
+  }
+
+  .slider-1 img {
+    opacity: 0.5;
+  }
